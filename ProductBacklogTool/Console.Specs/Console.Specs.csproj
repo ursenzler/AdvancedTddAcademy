@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F91696B6-CDB5-4AFD-A575-2A8BE837546F}</ProjectGuid>
+    <ProjectGuid>{23A9CC2F-FFA9-4BEF-B59C-3825F1292952}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProductBacklog</RootNamespace>
-    <AssemblyName>ProductBacklog.Core.Facts</AssemblyName>
+    <RootNamespace>Console.Specs</RootNamespace>
+    <AssemblyName>Console.Specs</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,16 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SmokeFacts.cs" />
+    <Compile Include="SmokeSpecs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="paket.references" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProductBacklog.Core\ProductBacklog.Core.csproj">
-      <Project>{86758f02-1919-4226-a4b7-1378123f07b2}</Project>
-      <Name>ProductBacklog.Core</Name>
+    <ProjectReference Include="..\Console\Console.csproj">
+      <Project>{f5e107bc-9b8e-4fd5-b98d-4ed7dc2d3d02}</Project>
+      <Name>Console</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -1442,6 +1442,22 @@
         <Reference Include="System.Xml.XDocument">
           <HintPath>..\packages\System.Xml.XDocument\ref\netstandard1.3\System.Xml.XDocument.dll</HintPath>
           <Private>False</Private>
+          <Paket>True</Paket>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Choose>
+    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.5' Or $(TargetFrameworkVersion) == 'v4.5.1' Or $(TargetFrameworkVersion) == 'v4.5.2' Or $(TargetFrameworkVersion) == 'v4.5.3' Or $(TargetFrameworkVersion) == 'v4.6' Or $(TargetFrameworkVersion) == 'v4.6.1' Or $(TargetFrameworkVersion) == 'v4.6.2' Or $(TargetFrameworkVersion) == 'v4.6.3' Or $(TargetFrameworkVersion) == 'v4.7' Or $(TargetFrameworkVersion) == 'v4.7.1')">
+      <ItemGroup>
+        <Reference Include="Xbehave.Core">
+          <HintPath>..\packages\Xbehave.Core\lib\portable-net45\Xbehave.Core.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="Xbehave.Execution.desktop">
+          <HintPath>..\packages\Xbehave.Core\lib\portable-net45\Xbehave.Execution.desktop.dll</HintPath>
+          <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
       </ItemGroup>

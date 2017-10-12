@@ -3,4 +3,14 @@ source https://www.nuget.org/api/v2
 nuget xunit.core 2.1.0
 nuget Xbehave.Core
 nuget FluentAssertions
+nuget FluentAssertions.Json
 nuget FakeItEasy
+
+nuget Appccelerate.CommandLineParser
+
+nuget Microsoft.Owin 3.0.1
+nuget Microsoft.Owin.Host.SystemWeb 3.0.1
+nuget Microsoft.Owin.Host.HttpListener 3.0.1
+nuget Microsoft.Owin.Hosting 3.0.1
+nuget Microsoft.AspNet.WebApi 5.2.3
+nuget Microsoft.AspNet.WebApi.Owin 5.2.3

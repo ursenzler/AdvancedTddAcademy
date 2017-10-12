@@ -1,6 +1,6 @@
 ﻿namespace ProductBacklog
 {
-    public class Smoke
+    public class Smoke : ISmoke
     {
         public int Run(string s)
         {
