@@ -1,0 +1,6 @@
+source https://www.nuget.org/api/v2
+
+nuget xunit.core 2.1.0
+nuget Xbehave.Core
+nuget FluentAssertions
+nuget FakeItEasy
